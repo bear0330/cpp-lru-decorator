@@ -14,6 +14,7 @@ It let you can simply change function signature to add LRU cache to a function o
   * For normal function, use LRU_DECL# and LRU_CACHED# macro where # is parameter number. For example, `int f(char v1, float v2)` changes to `LRU_DECL2(int, f, char, float)` and `LRU_CACHED2(int, f, char, float)`.
   * For method, only LRU_CACHED# macro required.
   * #define LRU_DEFAULT_LOCK_LEVEL if required; 0 means no lock used, 1 means object level lock used, 2 is class level lock. Default value is 1 for safety. If you run a single-threaded program, you can use 0 to improve performance.
+  * For every function, capacity is default to 4096, you can define LRU_DEFAULT_CAPACITY to change it.
 
 Example:
 ```
