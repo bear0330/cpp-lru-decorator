@@ -7,7 +7,6 @@ It let you can simply change function signature to add LRU cache to a function o
   * Simple to use and revert.
   * Header only.
   * Support multithreading via simply define LRU_DEFAULT_LOCK_LEVEL.
-  * 
   
 # Usage
 
