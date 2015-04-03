@@ -5,12 +5,13 @@ It let you can simply change function signature to add LRU cache to a function o
 
 # Features
   * Simple to use and revert.
+  * Automatically remember combination of arguments to return cached result.
   * Header only.
   * Support multithreading via simply define LRU_DEFAULT_LOCK_LEVEL.
   
 # Usage
 
-  * For normal function, use LRU_DECL# and LRU_CACHED# macro where # is parameter number. For example, int f(char v1, float v2) changes to LRU_DECL2(int, f, char, float) and LRU_CACHED2(int, f, char, float).
+  * For normal function, use LRU_DECL# and LRU_CACHED# macro where # is parameter number. For example, `int f(char v1, float v2)` changes to `LRU_DECL2(int, f, char, float)` and `LRU_CACHED2(int, f, char, float)`.
   * For method, only LRU_CACHED# macro required.
   * #define LRU_DEFAULT_LOCK_LEVEL if required; 0 means no lock used, 1 means object level lock used, 2 is class level lock. Default value is 1 for safety. If you run a single thread program, you can use 0 to improve performance.
 
