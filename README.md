@@ -1,5 +1,5 @@
 # cpp-lru-decorator
-Header only LRU decorator for C++03 based on boost::bimaps (algorithm heavily based on Tim Day's work: http://timday.bitbucket.org/lru.html).
+Header only LRU decorator for C++03 and C++1x based on boost::bimaps (algorithm heavily based on Tim Day's work: http://timday.bitbucket.org/lru.html).
 
 It let you can simply change function signature to add LRU cache to a function or method.
 
