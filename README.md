@@ -52,6 +52,6 @@ struct A
 
 # Limitations
   * Maximum 10 parameters supported.
-  * Return type void is not supported. (LRU expect cache the result, if no result, no cache required.)
-  * Function without parameter is not supported. (Without the parameter, a function suppose to return the same result every time, you can do a simple cache by yourself.)
+  * Return type void is not supported. (LRU expects cache the result, if no result, no cache required.)
+  * Function without parameter is not supported. (Without the parameter, a function supposes to return the same result every time, you can do a simple cache by yourself.)
   * Tested with Boost 1.43, Microsoft Visual Studio 2010 and GCC 4.4. Higher version of Boost, Visual Studio and GCC should work also.
