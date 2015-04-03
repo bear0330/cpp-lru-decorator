@@ -8,6 +8,7 @@ It let you can simply change function signature to add LRU cache to a function o
   * Automatically remember combination of arguments to return cached result.
   * Header only.
   * Support multithreading via simply define LRU_DEFAULT_LOCK_LEVEL.
+  * User defined types (class, struct) are also supported, not limited to primitive types.
   
 # Usage
 
@@ -54,4 +55,5 @@ struct A
   * Maximum 10 parameters supported.
   * Return type void is not supported. (LRU expects cache the result, if no result, no cache required.)
   * Function without parameter is not supported. (Without the parameter, a function supposes to return the same result every time, you can do a simple cache by yourself.)
+  * Parameters must support default/copy constructor and hashable (almost all standard and user defined types are fulfilled).
   * Tested with Boost 1.43, Microsoft Visual Studio 2010 and GCC 4.4. Higher version of Boost, Visual Studio and GCC should work also.
