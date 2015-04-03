@@ -33,7 +33,7 @@ LRU_CACHED1(int, Fib, int, n)
 }
 ```
 
-On my machine (Intel i5 2400, orignal Fib(50) run **93.18 seconds**, LRU cached version run **0.002 seconds**.)
+On my machine (Intel i5 2400 3.10GHz, orignal Fib(50) run **93.18 seconds**, LRU cached version run **0.002 seconds**.)
 
 Example2: (method)
 ```
